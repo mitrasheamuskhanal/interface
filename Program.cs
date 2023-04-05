@@ -34,12 +34,24 @@ namespace learninginterface
         public int Perimeter (int a,int b)
         {
             return 2*(a*b);
+        }    
+    }
+    public class main
+    {
+        public  static void  Main()
+        {
+            Square1 square = new Square1();
+            int squareArea = square.Area(4, 4);
+            int squarePerimeter = square.Perimeter(4, 4);
+            Console.WriteLine("Square area: " + squareArea);
+            Console.WriteLine("Square perimeter: " + squarePerimeter);
+
+            Rectangle rectangle = new Rectangle();
+            int rectangleArea = rectangle.Area(4, 5);
+            int rectanglePerimeter = rectangle.Perimeter(4, 5);
+            Console.WriteLine("Rectangle area: " + rectangleArea);
+            Console.WriteLine("Rectangle perimeter: " + rectanglePerimeter);
         }
     }
-    public class  static void Main()
-    {
-        Square1 square = new Square1();
-        
-        Console.WriteLine("");
-    }
+    
 }
